@@ -1,14 +1,58 @@
-# Vite + React
+# React Single Responsibility Principle Demo
 
-This is a [Vite](https://vitejs.dev) project together with React.
+This project is a demonstration of the Single Responsibility Principle (SRP) applied to a React application. It showcases a simple product listing application with filtering functionality based on product ratings.
 
-[![Edit in CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/github/codesandbox/codesandbox-template-vite-react/main)
+## Getting Started
 
-[Configuration](https://codesandbox.io/docs/projects/learn/setting-up/tasks) has been added to optimize it for [CodeSandbox](https://codesandbox.io/dashboard).
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Resources
+### Prerequisites
 
-- [CodeSandbox — Docs](https://codesandbox.io/docs/projects)
-- [CodeSandbox — Discord](https://discord.gg/Ggarp3pX5H)
-- [Vite — GitHub](https://github.com/vitejs/vite)
-- [Vite — Docs](https://vitejs.dev/guide/)
+Before you begin, ensure you have met the following requirements:
+
+- You have installed Node.js and npm.
+- You have a basic understanding of React and TypeScript.
+
+### Installing
+
+1. Clone the repo
+
+```bash
+git clone https://github.com/adeeshsharma/SRP-REACT-DEMO.git
+```
+
+2. Navigate into the project directory
+
+```bash
+cd SRP-REACT-DEMO
+```
+
+3. Install the dependencies
+
+```bash
+yarn
+```
+
+### Running the application
+
+Start the development server with:
+
+```bash
+yarn dev
+```
+
+## Project Structure
+
+The main files in the project are located in the src directory:
+
+- components/product.tsx: Displays individual product details.
+- components/filter.tsx: Provides a filter by rating functionality.
+- hooks/useProducts.tsx: Custom hook for fetching and managing product data.
+- hooks/useRateFilter.tsx: Custom hook for managing the state of the rating filter.
+- pages/good-approach.tsx: The main page that integrates all the components and hooks to showcase the SRP approach.
+
+## Acknowledgments
+
+This project uses the Fake Store API for product data.
+
+- https://fakestoreapi.com/
